@@ -1,3 +1,4 @@
+import router from '@/router'
 import createAuth0Client, { Auth0Client, Auth0ClientOptions,  GetIdTokenClaimsOptions, GetTokenSilentlyOptions, GetTokenWithPopupOptions, LogoutOptions, PopupConfigOptions, PopupLoginOptions, RedirectLoginOptions, User } from '@auth0/auth0-spa-js'
 import { computed, reactive } from 'vue'
 
@@ -19,8 +20,7 @@ interface State {
 }
 
 const DEFAULT_REDIRECT_CALLBACK = () =>
-  window.history.replaceState({}, document.title, window.location.pathname);
-
+  router.replace(window.location.pathname)
 
 const state = reactive<State>({
     loading: true,
