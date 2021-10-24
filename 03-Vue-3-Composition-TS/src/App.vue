@@ -30,7 +30,8 @@ export default defineComponent({
     Error
   },
   setup() {
-     const { initializeAuth } = useAuth();
+    // You can import 'loading' here and show a global loader if that's more convenient 
+    const { initializeAuth } = useAuth();
 
     onMounted(() =>
       initializeAuth({

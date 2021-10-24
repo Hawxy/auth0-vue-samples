@@ -1,5 +1,5 @@
 import { watchEffect } from 'vue';
-import {  RouteLocationNormalized } from 'vue-router';
+import { RouteLocationNormalized } from 'vue-router';
 import { useAuth } from './useAuthService';
 
 export const useRouteGuard = (to: RouteLocationNormalized, from: RouteLocationNormalized) => {
