@@ -1,20 +1,16 @@
-import { watchEffect } from 'vue';
-import { RouteLocationNormalized } from 'vue-router';
-import { useAuth } from './useAuthService';
+// Vue 2 composition API alternative
 
-// Uses boolean return and thus requires Vue 3 router.
-export const useRouteGuard = (to: RouteLocationNormalized, from: RouteLocationNormalized) => {
+/*export const useRouteGuard = (to: Route, from: Route, next: NavigationGuardNext) => {
     const { isAuthenticated, loading, loginWithRedirect } = useAuth();
 
     const verify = () => {
         // If the user is authenticated, continue with the route
         if (isAuthenticated.value) {
-            return true
+            return next()
         }
 
         // Otherwise, log in
         loginWithRedirect({ appState: { targetUrl: to.fullPath } })
-        return false;
     }
 
     // If loading has already finished, check our auth state using `verify()`
@@ -28,4 +24,4 @@ export const useRouteGuard = (to: RouteLocationNormalized, from: RouteLocationNo
             return verify()
         }
     })
-}
+}*/
