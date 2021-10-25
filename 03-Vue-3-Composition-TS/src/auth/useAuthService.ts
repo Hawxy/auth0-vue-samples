@@ -22,6 +22,10 @@ interface State {
 const DEFAULT_REDIRECT_CALLBACK = () =>
   router.replace(window.location.pathname)
 
+/* For projects that don't use the vue router
+const DEFAULT_REDIRECT_CALLBACK = () =>
+  window.history.replaceState({}, document.title, window.location.pathname);
+*/
 const state = reactive<State>({
     loading: true,
     isAuthenticated: false,
