@@ -14,6 +14,13 @@ I'll add an API example when I get a moment.
 npm install
 ```
 
+Create a `.env` file in the root directory with the below values set
+```env
+VUE_APP_AUTH0_DOMAIN=""
+VUE_APP_AUTH0_CLIENTID=""
+VUE_APP_AUTH0_AUDIENCE=""
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
