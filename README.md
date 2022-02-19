@@ -1,3 +1,5 @@
+# NOTE: This example is now deprecated, use the new official Vue 3 SDK: https://github.com/auth0/auth0-vue
+
 # Auth0 Vue.js Samples
 
 [![CircleCI](https://circleci.com/gh/auth0-samples/auth0-vue-samples.svg?style=svg)](https://circleci.com/gh/auth0-samples/auth0-vue-samples)
