@@ -1,3 +1,5 @@
+# NOTE: This example is now deprecated, use the new official Vue 3 SDK: https://github.com/auth0/auth0-vue
+
 # Vue Composition + Typescript Example
 
 The example is similar to `Login-01`, however is completely rewritten with Vue 3 Composition + Typescript in mind. I've kept the visuals the same.
